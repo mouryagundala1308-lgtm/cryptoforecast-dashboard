@@ -1,0 +1,7 @@
+﻿__pycache__/
+*.pyc
+.env
+*.env
+.streamlit/secrets.toml
+kaggle.json
+access_token*
