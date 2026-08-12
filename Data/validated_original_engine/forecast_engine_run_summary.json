@@ -1,0 +1,91 @@
+{
+  "generated_at_utc": "2026-08-11T21:09:34.950939+00:00",
+  "engine": "CryptoForecast_End_to_End",
+  "config": {
+    "input_path": "C:\\Users\\MOURYA\\OneDrive\\mine\\University\\final project reference\\Final outputs and files\\cryptocurrency.csv",
+    "output_dir": "C:\\Users\\MOURYA\\OneDrive\\mine\\University\\final project reference\\Final outputs and files\\Data\\validated_original_engine",
+    "horizons": [
+      1,
+      3,
+      7,
+      14,
+      30
+    ],
+    "test_fraction": 0.2,
+    "min_model_train_rows": 60,
+    "min_xgb_train_rows": 60,
+    "max_signal_data_age_days": 3,
+    "signal_floor_pct": 1.0,
+    "quick": false,
+    "skip_arima": false,
+    "skip_xgboost": false,
+    "symbols": []
+  },
+  "cleaning": {
+    "raw_rows": 106200,
+    "cleaned_rows": 106200,
+    "assets_retained": 71,
+    "invalid_timestamps": 0,
+    "invalid_symbols": 0,
+    "duplicate_symbol_timestamp_rows": 0,
+    "missing_target_prices": 0,
+    "missing_chg_24h": 1169,
+    "nonpositive_market_cap_treated_as_missing": 0,
+    "negative_volume_treated_as_missing": 0,
+    "negative_total_volume_treated_as_missing": 0,
+    "zero_price_rows": 3133,
+    "blocked_symbols": [
+      "htx",
+      "pepe",
+      "shib"
+    ]
+  },
+  "daily_rows": 5952,
+  "daily_assets": 68,
+  "requested_assets": 71,
+  "processed_assets": 68,
+  "blocked_assets": 3,
+  "failed_assets": 0,
+  "future_rows": 355,
+  "forecast_generated_rows": 340,
+  "model_metric_rows": 1020,
+  "backtest_prediction_rows": 9424,
+  "validation_policy": {
+    "comparison_horizons_days": [
+      1,
+      3,
+      7,
+      14
+    ],
+    "scenario_only_horizons_days": [
+      30
+    ],
+    "minimum_training_rows": 60,
+    "minimum_test_predictions": 5,
+    "production_models": [
+      "ARIMA",
+      "Naive"
+    ],
+    "experimental_models": [
+      "XGBoost"
+    ],
+    "primary_cross_asset_metrics": [
+      "MAPE",
+      "sMAPE",
+      "RMSPE",
+      "MASE"
+    ]
+  },
+  "elapsed_seconds": 294.5379755999893,
+  "outputs": {
+    "cleaned": "C:\\Users\\MOURYA\\OneDrive\\mine\\University\\final project reference\\Final outputs and files\\Data\\validated_original_engine\\cleaned_crypto_final.csv",
+    "daily": "C:\\Users\\MOURYA\\OneDrive\\mine\\University\\final project reference\\Final outputs and files\\Data\\validated_original_engine\\crypto_daily_final.csv",
+    "backtest": "C:\\Users\\MOURYA\\OneDrive\\mine\\University\\final project reference\\Final outputs and files\\Data\\validated_original_engine\\model_backtest_predictions.csv",
+    "comparison": "C:\\Users\\MOURYA\\OneDrive\\mine\\University\\final project reference\\Final outputs and files\\Data\\validated_original_engine\\model_comparison_daily.csv",
+    "future": "C:\\Users\\MOURYA\\OneDrive\\mine\\University\\final project reference\\Final outputs and files\\Data\\validated_original_engine\\future_forecasts_all_models.csv",
+    "signals": "C:\\Users\\MOURYA\\OneDrive\\mine\\University\\final project reference\\Final outputs and files\\Data\\validated_original_engine\\coin_signal_summary.csv",
+    "status": "C:\\Users\\MOURYA\\OneDrive\\mine\\University\\final project reference\\Final outputs and files\\Data\\validated_original_engine\\processing_status_all_71_coins.csv",
+    "summary": "C:\\Users\\MOURYA\\OneDrive\\mine\\University\\final project reference\\Final outputs and files\\Data\\validated_original_engine\\forecast_engine_run_summary.json"
+  },
+  "disclaimer": "Signals are model-generated research outputs, not personalised financial advice or guarantees of future returns."
+}
