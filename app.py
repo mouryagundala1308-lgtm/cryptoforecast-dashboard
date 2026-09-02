@@ -21,7 +21,7 @@ st.set_page_config(
     page_title="CryptoForecast | Market Intelligence",
     page_icon="◈",
     layout="wide",
-    initial_sidebar_state="expanded",
+    initial_sidebar_state="locked",
 )
 
 APP_DIR = Path(__file__).resolve().parent
